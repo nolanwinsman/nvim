@@ -1,9 +1,6 @@
 return require('packer').startup(function()
 	-- Packer can manage itself
-        use 'wbthomason/packer.nvim'
-
-	-- Add plugins here
-	
+        use 'wbthomason/packer.nvim'	
 	-- Impatient for faster loading
 	use 'lewis6991/impatient.nvim'
 	--Indent Blankline
