@@ -11,16 +11,18 @@ return require('packer').startup(function()
 	use 'ahmedkhalf/project.nvim'
 	-- Alpha nvim
 	use {
-    		'goolord/alpha-nvim',
+		'goolord/alpha-nvim',
+    		requires = { 'kyazdani42/nvim-web-devicons' },
     		config = function ()
-        		require'alpha'.setup(require'alpha.themes.dashboard'.config)
+        		require'alpha'.setup(require'alpha.themes.startify'.config)
     		end
-	}
-	
+	}	
 	-- fzf-lua
 	use { 'ibhagwan/fzf-lua',
-  	-- optional for icon support
-  	requires = { 'kyazdani42/nvim-web-devicons' }
+  		-- optional for icon support
+  		requires = { 'kyazdani42/nvim-web-devicons' }
   	}
+	-- Wakatime
+	use 'wakatime/vim-wakatime'
 end)
 
