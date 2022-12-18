@@ -34,6 +34,9 @@ require'nvim-treesitter.configs'.setup {
 
 -- Add projects capability to telescope
 require('telescope').load_extension('projects')
+-- should hide .git files
+let g:telescope_ignored_files = ['*.git']
+
 
 telescope.setup {
   extensions = {
