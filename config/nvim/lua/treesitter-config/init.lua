@@ -14,9 +14,9 @@ require'nvim-treesitter.configs'.setup {
         "typescript",
         "java",
         "json",
-       -- "markdown",
+        --"markdown",
         "rust",
-       -- "ruby",
+        --"ruby",
     },
 
     -- Switches default parser package downloader to curl for Windows compatibility
