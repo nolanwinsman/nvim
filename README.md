@@ -35,8 +35,8 @@ Project Link: [https://github.com/nolanwinsman/neovim-config](https://github.com
 
 ## Script Files
 
-| Filename      |  Description
-| --------------------------------------------------------------------------------------------------------------- |
+| Filename      |  Description                                                                                    |
+| ------------- | ----------------------------------------------------------------------------------------------- |
 | config/       | Folder with all of the neovim config files                                                      |
 | README.md     | This file                                                                                       |
 | refresh.cmd   | Batch script to simply copy the contents of config/ to the neovim install folder on Windows 11. |
