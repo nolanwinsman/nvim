@@ -1,10 +1,10 @@
 return {
 	"ahmedkhalf/project.nvim",
 	config = function()
-		require("project_nvim".setup {
-			-- your configuration comes here
-			-- or leave it empty to use the default settings
-			-- refer to the configuration section below
+		require("project_nvim").setup {
+			-- Your configuration comes here
+			-- Leave it empty to use default settings or add your custom configurations
+			-- Refer to the configuration section below for options
 		}
 	end
 }

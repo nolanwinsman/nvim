@@ -31,7 +31,7 @@ require("mason-config")
 require("null-ls-config")
 
 -- lsp
--- require('lsp-config.language-servers')
+require('lsp-config.language-servers')
 require("lsp-config.null-ls")
 require("lsp-config.nvim-cmp")
 

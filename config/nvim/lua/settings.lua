@@ -14,12 +14,12 @@ vim.cmd([[colorscheme gruvbox]])
 
 
 -- Indent Blankline setup
-opt.list = true
-opt.listchars:append "space:⋅"
-require("indent_blankline").setup {
-	show_end_of_line = true,
-	space_char_blankline = " ",
-}
+-- opt.list = true
+-- opt.listchars:append "space:⋅"
+-- require("indent_blankline").setup {
+-- 	show_end_of_line = true,
+-- 	space_char_blankline = " ",
+-- }
 
 -- File Explorer nvim-tree
 g.loaded_netrw = 1
