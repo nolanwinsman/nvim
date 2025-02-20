@@ -3,7 +3,7 @@ return {
 	"stevearc/conform.nvim",
 	event = { "BufReadPre", "BufNewFile" },
 	config = function()
-		local conform = require()
+		local conform = require("conform")
 
 		conform.setup({
 			formatters_by_ft = {
@@ -39,6 +39,7 @@ return {
 				css = { stop_after_first = true },
 
 			},
+		})
 
 			-- format on save
 			vim.api.nvim_create_autocmd("BufWritePre", {
