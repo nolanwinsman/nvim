@@ -18,7 +18,6 @@ return {
 				},
 			})
 		end,
-
 	},
 	{
 		"neovim/nvim-lspconfig",
@@ -34,39 +33,34 @@ return {
 			-- lua
 			lspconfig.lua_ls.setup({
 				on_attach = function(client, bufnr)
-					disable_lspformatting(client)
+					disable_lsp_formatting(client)
 				end,
 			})
 
 			-- python
 			lspconfig.pyright.setup({
 				on_attach = function(client, bufnr)
-					disable_lspformatting(client)
+					disable_lsp_formatting(client)
 				end,
 			})
 
 			-- docker
 			lspconfig.docker_compose_language_service.setup({
 				on_attach = function(client, bufnr)
-					disable_lspformatting(client)
+					disable_lsp_formatting(client)
 				end,
 			})
 
 			-- GO
 			lspconfig.gopls.setup({
 				on_attach = function(client, bufnr)
-					disable_lspformatting(client)
+					disable_lsp_formatting(client)
 				end,
 			})
 
 			vim.keymap.set("n", "H", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
-
 		end,
-
-
-
 	},
-
 }

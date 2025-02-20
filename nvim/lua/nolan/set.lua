@@ -1,27 +1,25 @@
-local o = vim.opt
+vim.g.mapleader = " "
 
-o.nu = true
-o.relativenumber = true
+vim.opt.number = true
+vim.opt.relativenumber = true
 
 -- smarter indenting
-o.tabestop = 4
-o.softtabstop = 4
-o.shiftwidth = 4
-o.expandtab = true
-o.smartindent = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.smartindent = true
 
-o.wrap = false
+vim.opt.wrap = false
 
-o.hlsearch = false
-o.incsearch = false
+vim.opt.hlsearch = false
+vim.opt.incsearch = false
 
-o.termguicolors = true
+vim.opt.termguicolors = true
 
 -- always a buffer of 8 lines when scrolling up or down
-o.scrolloff = 8
+vim.opt.scrolloff = 8
 
-o.updatetime = 50
+vim.opt.updatetime = 50
 
-o.colorcolumn = "80"
-
--- o.g.mapleader = " "
+vim.opt.colorcolumn = "80"
