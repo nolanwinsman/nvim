@@ -16,17 +16,18 @@ return {
 				json = { "prettierd", "prettier" },
 				java = { "google-java-format" },
 				kotlin = { "ktlint" },
-				ruby = { "standardrb"},
+				ruby = { "standardrb" },
 				markdown = { "prettierd", "prettier" },
-				html = { "htmlbeautifier"},
+				html = { "htmlbeautifier" },
 				bash = { "beautysh" },
 				rust = { "rustfmt" },
 				yaml = { "yamlfix" },
 				css = { "prettierd", "prettier" },
 				sh = { "shellcheck" },
 				go = { "gofmt" },
+				python = { "black" },
+				--python = { "ruff" },
 				xml = { "xmllint" },
-
 			},
 			format_options = {
 				svelte = { stop_after_first = true },
@@ -37,28 +38,26 @@ return {
 				json = { stop_after_first = true },
 				markdown = { stop_after_first = true },
 				css = { stop_after_first = true },
-
 			},
 		})
 
-			-- format on save
-			vim.api.nvim_create_autocmd("BufWritePre", {
-				pattern = "*",
-				callback = function(args)
-					require("conform").format({
-						bufnr = args.buf,
-						timeout_ms = 5000,
-					})
-				end,
-			})
-
-			vim.keymap.set({ "n", "v" }, "<leader>l", function()
-				conform.format({
-					lsp_fallback = true,
-					async = false,
+		-- format on save
+		vim.api.nvim_create_autocmd("BufWritePre", {
+			pattern = "*",
+			callback = function(args)
+				require("conform").format({
+					bufnr = args.buf,
 					timeout_ms = 5000,
 				})
-			end, { desc = "Format file or range" })
-		end,
+			end,
+		})
 
+		vim.keymap.set({ "n", "v" }, "<leader>l", function()
+			conform.format({
+				lsp_fallback = true,
+				async = false,
+				timeout_ms = 5000,
+			})
+		end, { desc = "Format file or range" })
+	end,
 }
