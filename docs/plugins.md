@@ -6,6 +6,12 @@ lazy.nvim is a modern plugin manager for Neovim.
 
 [https://github.com/folke/lazy.nvim](https://github.com/folke/lazy.nvim)
 
+### alpha-nvim
+
+Cool Nvim greeter
+
+[https://github.com/goolord/alpha-nvim](https://github.com/goolord/alpha-nvim)
+
 ### gruvbox
 
 sets my prefered colorscheme

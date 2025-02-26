@@ -12,17 +12,20 @@ git clone https://github.com/nolanwinsman/neovim-config
 
 ## Getting Started
 
-For Windows
+For Windows the below script will copy all the files to your Neovim config folder.
 
 ```sh
 ./setup.ps1
 ```
 
-Linux is currently not supported.
-
-## Lazy Setup
+This configuration is not tested on Linux and I do not have a script to move the files to the current config directory. That being said I don't
+see any reason this shouldn't work on Linux.
 
 ## [Plugins](docs/plugins.md)
+
+This is an overview of all my plugins
+
+## Lazy Setup
 
 View `nvim/lua/nolan/plugins` for the complete list of all plugins excluding Lazy
 
@@ -52,6 +55,8 @@ This is a compilation of vim inputs I frequnetly use.
 - c
 
 ## Current Issues
+
+- Mason install does not seem to be working perfectly. Sometimes LSP is not detected even though installed.
 
 ## Script Files
 
