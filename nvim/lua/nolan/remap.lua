@@ -13,7 +13,7 @@ vim.keymap.set("v", "<C-c>", '"+y', { silent = true })
 vim.keymap.set("n", "<C-v>", '"+p', { silent = true })
 
 -- append line to previous line but keep cursor in same spot
-vim.keymap.set("n", "J", "mzJ`z")
+-- vim.keymap.set("n", "J", "mzJ`z")
 
 -- when searching string, keeps search term in the middle
 vim.keymap.set("n", "n", "nzzzv")
