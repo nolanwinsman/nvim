@@ -20,16 +20,6 @@ For Windows
 
 Linux is currently not supported.
 
-# Contact
-
-Nolan Winsman - [@Github](https://github.com/nolanwinsman) - nolanwinsman@gmail.com
-
-Project Link: [https://github.com/nolanwinsman/neovim-config](https://github.com/nolanwinsman/neovim-config)
-
-# Contributers
-
-- nolanwinsman
-
 ## Lazy Setup
 
 ## [Plugins](docs/plugins.md)
@@ -79,3 +69,13 @@ These are all of the files inside of the `config/nvim/` folder which store the n
 | Filename | Description                           |
 | -------- | ------------------------------------- |
 | init.lua | Main initialization script for Neovim |
+
+# Contact
+
+Nolan Winsman - [@Github](https://github.com/nolanwinsman) - nolanwinsman@gmail.com
+
+Project Link: [https://github.com/nolanwinsman/neovim-config](https://github.com/nolanwinsman/neovim-config)
+
+# Contributers
+
+- nolanwinsman
