@@ -60,12 +60,11 @@ This is a compilation of vim inputs I frequnetly use.
 
 ## Script Files
 
-| Filename    | Description                                                                                     |
-| ----------- | ----------------------------------------------------------------------------------------------- |
-| config/     | Folder with all of the neovim config files                                                      |
-| README.md   | This file                                                                                       |
-| refresh.cmd | Batch script to simply copy the contents of config/ to the neovim install folder on Windows 11. |
-| setup.ps1   | Complete Windows 11 setup script to install all dependencies (Incomplete)                       |
+| Filename  | Description                                                               |
+| --------- | ------------------------------------------------------------------------- |
+| config/   | Folder with all of the neovim config files                                |
+| README.md | This file                                                                 |
+| setup.ps1 | Complete Windows 11 setup script to install all dependencies (Incomplete) |
 
 ## Neovim Config Files
 
