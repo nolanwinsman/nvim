@@ -88,14 +88,6 @@ This is a compilation of vim inputs I frequnetly use.
 | nvim/lua/nolan/plugins/treesitter.txt  | Treesitter Plugin for syntax highlighting (not used)                      |
 | nvim/lua/nolan/plugins/wakatime.lua    | Wakatime plugin for tracking my hours coding                              |
 
-## Neovim Config Files
-
-These are all of the files inside of the `config/nvim/` folder which store the neovim configurations including plugins, keybinds, settings and more.
-
-| Filename | Description                           |
-| -------- | ------------------------------------- |
-| init.lua | Main initialization script for Neovim |
-
 # Contact
 
 Nolan Winsman - [@Github](https://github.com/nolanwinsman) - nolanwinsman@gmail.com
