@@ -1,4 +1,6 @@
--- NAVIGATION
+-- Jump to Previous Buffer
+vim.keymap.set("n", "<leader>-", "<C-^>", { noremap = true, silent = true })
+
 -- highlight multiple lines then move them up and down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
