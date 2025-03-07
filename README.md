@@ -60,12 +60,6 @@ This is a compilation of vim inputs I frequnetly use.
 
 ## Script Files
 
-| Filename  | Description                                                               |
-| --------- | ------------------------------------------------------------------------- |
-| config/   | Folder with all of the neovim config files                                |
-| README.md | This file                                                                 |
-| setup.ps1 | Complete Windows 11 setup script to install all dependencies (Incomplete) |
-
 | Filename                               | Description                                                               |
 | -------------------------------------- | ------------------------------------------------------------------------- |
 | README.md                              | This file                                                                 |
