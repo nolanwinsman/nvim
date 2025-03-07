@@ -57,6 +57,7 @@ return {
 
 			-- Keybindings
 			vim.keymap.set("n", "H", vim.lsp.buf.hover, {})
+			--  Jump to function/class definition
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 		end,
