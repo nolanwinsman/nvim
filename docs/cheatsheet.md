@@ -12,7 +12,11 @@
 | `n`  | `CTRL v` |                                           paste from clipboard |
 | `J`  |      `n` | append below line to current line but keep cursor in same spot |
 
-# File Management
+# Jumping Around Files
+
+| Mode |       Key |             Description |
+| ---- | --------: | ----------------------: |
+| `n`  | `Space -` | Jump to Previous Buffer |
 
 ## Oil
 
