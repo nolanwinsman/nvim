@@ -29,3 +29,18 @@ Here are the list of Mason packages I use. They're not all actively used as a sw
 - prettierd
 - pyright
 - stylua
+
+## Winget Installs
+
+Since I am mostly using this config on Windows, here are some dependencies I need for this config
+
+```sh
+winget install --id=GoLang.Go  -e
+
+winget install -e --id OpenJS.NodeJS
+
+winget install BurntSushi.ripgrep.MSVC
+
+winget install GnuWin32.Make
+
+```
