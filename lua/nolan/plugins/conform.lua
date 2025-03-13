@@ -24,7 +24,7 @@ return {
 				yaml = { "yamlfix" },
 				css = { "prettierd", "prettier" },
 				sh = { "shellcheck" },
-				go = { "gofumt" },
+				go = { "gofumpt" },
 				python = { "black" },
 				--python = { "ruff" },
 				xml = { "xmllint" },
