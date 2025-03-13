@@ -2,7 +2,7 @@
 
 These are my files to configure Neovim
 
-### Install External Dependencies
+### [Install External Dependencies](docs/dependencies.md)
 
 External Requirements:
 
@@ -16,10 +16,6 @@ External Requirements:
   - If you want to write Typescript, you need `npm`
   - If you want to write Golang, you will need `go`
   - etc.
-
-> **NOTE**
-> See [Install Recipes](#Install-Recipes) for additional Windows and Linux specific notes
-> and quick install snippets
 
 ### Install Kickstart
 
@@ -85,19 +81,6 @@ This is a compilation of vim inputs I frequnetly use.
 - undotree
 - fugitive
 - debugger
-
-## Working Formatters
-
-- Lua
-- Markdown
-- Typescript
-
-## Required Installs
-
-- npm
-- go
-- python/pip
-- c
 
 ## Current Issues
 
