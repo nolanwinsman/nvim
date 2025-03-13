@@ -51,6 +51,8 @@ If you're using `powershell.exe`
 git clone https://github.com/nolanwinsman/nolanw.nvim.git "${env:LOCALAPPDATA}\nvim"
 ```
 
+</details>
+
 ### Post Installation
 
 Start Neovim
