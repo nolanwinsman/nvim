@@ -17,7 +17,7 @@ External Requirements:
   - If you want to write Golang, you will need `go`
   - etc.
 
-### Install Kickstart
+### Install Nolan's Neovim Config
 
 > **NOTE** > [Backup](#FAQ) your previous configuration (if any exists)
 
