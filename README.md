@@ -2,7 +2,7 @@
 
 These are my files to configure Neovim
 
-### [Install External Dependencies](docs/dependencies.md)
+### [Install External Dependencies](docs/setup.md)
 
 External Requirements:
 
