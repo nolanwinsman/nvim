@@ -2,24 +2,69 @@
 
 These are my files to configure Neovim
 
-## Installation
+### Install External Dependencies
 
-1. Clone the repo
+External Requirements:
+
+- Basic utils: `git`, `make`, `unzip`, C Compiler (`gcc`)
+- [ripgrep](https://github.com/BurntSushi/ripgrep#installation)
+- Clipboard tool (xclip/xsel/win32yank or other depending on the platform)
+- A [Nerd Font](https://www.nerdfonts.com/): optional, provides various icons
+  - if you have it set `vim.g.have_nerd_font` in `init.lua` to true
+- Emoji fonts (Ubuntu only, and only if you want emoji!) `sudo apt install fonts-noto-color-emoji`
+- Language Setup:
+  - If you want to write Typescript, you need `npm`
+  - If you want to write Golang, you will need `go`
+  - etc.
+
+> **NOTE**
+> See [Install Recipes](#Install-Recipes) for additional Windows and Linux specific notes
+> and quick install snippets
+
+### Install Kickstart
+
+> **NOTE** > [Backup](#FAQ) your previous configuration (if any exists)
+
+Neovim's configurations are located under the following paths, depending on your OS:
+
+| OS                   | PATH                                      |
+| :------------------- | :---------------------------------------- |
+| Linux, MacOS         | `$XDG_CONFIG_HOME/nvim`, `~/.config/nvim` |
+| Windows (cmd)        | `%localappdata%\nvim\`                    |
+| Windows (powershell) | `$env:LOCALAPPDATA\nvim\`                 |
+
+<details><summary> Linux and Mac </summary>
 
 ```sh
-git clone https://github.com/nolanwinsman/neovim-config
+git clone https://github.com/nolanwinsman/nolanw.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
-## Getting Started
+</details>
 
-For Windows the below script will copy all the files to your Neovim config folder.
+<details><summary> Windows </summary>
+
+If you're using `cmd.exe`:
+
+```
+git clone https://github.com/nolanwinsman/nolanw.nvim.git "%localappdata%\nvim"
+```
+
+If you're using `powershell.exe`
+
+```
+git clone https://github.com/nolanwinsman/nolanw.nvim.git "${env:LOCALAPPDATA}\nvim"
+```
+
+### Post Installation
+
+Start Neovim
 
 ```sh
-./setup.ps1
+nvim
 ```
 
-This configuration is not tested on Linux and I do not have a script to move the files to the current config directory. That being said I don't
-see any reason this shouldn't work on Linux.
+That's it! Lazy will install all the plugins you have. Use `:Lazy` to view
+the current plugin status. Hit `q` to close the window.
 
 ## [Plugins](docs/plugins.md)
 
@@ -97,3 +142,12 @@ Project Link: [https://github.com/nolanwinsman/neovim-config](https://github.com
 # Contributers
 
 - nolanwinsman
+
+# Credits
+
+- A fair amount of this README is copied from ![](https://github.com/nvim-lua/kickstart.nvim)
+
+A lot of the configuration is inspired and copied from
+
+- [ThePrimeagen](https://www.youtube.com/@ThePrimeagen)'s Neovim setup video ![](https://www.youtube.com/watch?v=w7i4amO_zaE) although a fair amount of the setup in this Youtube video is outdated.
+- [TJ DeVries](https://www.youtube.com/@teej_dv). Many of his Neovim setup videos helped me configure my setup.
