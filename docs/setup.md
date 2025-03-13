@@ -16,9 +16,10 @@ to open Mason
 :Mason
 ```
 
-Here are the list of Mason packages I use.
+Here are the list of Mason packages I use. They're not all actively used as a switch back and forth between formatters/lsps sometimes
 
 - black
+- ruff
 - clangd
 - gofumpt
 - gopls

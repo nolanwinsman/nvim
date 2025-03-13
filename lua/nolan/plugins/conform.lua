@@ -25,7 +25,7 @@ return {
 				css = { "prettierd", "prettier" },
 				sh = { "shellcheck" },
 				go = { "gofumpt" },
-				python = { "black" },
+				python = { "ruff" },
 				--python = { "ruff" },
 				xml = { "xmllint" },
 			},
