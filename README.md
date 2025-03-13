@@ -130,9 +130,6 @@ Project Link: [https://github.com/nolanwinsman/neovim-config](https://github.com
 
 # Credits
 
-- A fair amount of this README is copied from ![](https://github.com/nvim-lua/kickstart.nvim)
-
-A lot of the configuration is inspired and copied from
-
 - [ThePrimeagen](https://www.youtube.com/@ThePrimeagen)'s Neovim setup video ![](https://www.youtube.com/watch?v=w7i4amO_zaE) although a fair amount of the setup in this Youtube video is outdated.
+- [https://github.com/nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) For some config inspiration and README docs
 - [TJ DeVries](https://www.youtube.com/@teej_dv). Many of his Neovim setup videos helped me configure my setup.
