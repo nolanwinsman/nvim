@@ -128,6 +128,10 @@ Project Link: [https://github.com/nolanwinsman/neovim-config](https://github.com
 
 - nolanwinsman
 
+# [Why Use Neovim](docs/why_nvim.md)
+
+This is a little guide on why I enjoy Neovim and why I would recommend it.
+
 # Credits
 
 - [ThePrimeagen](https://www.youtube.com/@ThePrimeagen)'s Neovim setup video ![](https://www.youtube.com/watch?v=w7i4amO_zaE) although a fair amount of the setup in this Youtube video is outdated.
