@@ -6,8 +6,9 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- scroll half page and keep cursor in center
-vim.keymap.set({ "n", "v" }, "<C-j>", "<C-d>zz", { desc = "Scroll down half page and center cursor" })
-vim.keymap.set({ "n", "v" }, "<C-k>", "<C-u>zz", { desc = "Scroll up half page and center cursor" })
+-- Neoscroll handles this now
+--vim.keymap.set({ "n", "v" }, "<C-j>", "<C-d>zz", { desc = "Scroll down half page and center cursor" })
+-- vim.keymap.set({ "n", "v" }, "<C-k>", "<C-u>zz", { desc = "Scroll up half page and center cursor" })
 
 -- TEXT EDITING
 -- CTRL-c and CTRL-v to copy and paste to clipboard
