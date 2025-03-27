@@ -124,6 +124,26 @@ Between you and me, I still don't fully understand what the Buffer is in Vim. Th
 I briefly mentioned this earlier but one of the best things about Vim are the Vim Motions. Even if you have zero intention of installing Neovim, you should consider installing vim motions. The editing and bouncing around from the different modes only using the keyboard
 are just fantastic and I believe the true way to develop.
 
+It would take a lot of space and effort to list all the Vim motions, but here are four of the most common. These are all for Normal mode.
+
+#### h
+
+Move cursor left
+
+#### j
+
+Move cursor down
+
+#### k
+
+Move cursor up
+
+#### l
+
+Move cursor right
+
+These keybinds are weird right? Like nothing you've ever seen before. Why would I ever click `j` to move my cursor down? You might be asking to yourself. Well trust the process because these keybinds are amazing. Much better than using the arrow keys.
+
 ## Plugins and my Config
 
 While Neovim by it self is a great experience, it gets really saucy with some plugins. These aren't all the plugins I use but they're some of the most important and I love using them. You can see my entire Neovim config here
