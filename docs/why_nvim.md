@@ -3,7 +3,9 @@
 Now technically this title reads "Why Does Use Neovim?" which isn't really English but I thought it was funny. This document is an overview of why I recommend learning and using Neovim. It also includes some background information on my Neovim configuration. This
 doesn't really cover how to use Neovim, it's more about my experience with it and why I recommend it.
 
-I feel like persuading people to use Neovim to code is like trying to convince them to drive manual cars. The average Joe would rather just drive an automatic, but for those select few out there that want to get a little more out of their driving, you gotta go manual.
+I have a coworker that absolutely swears by driving manual transmission cars. He says "it's the only way to drive a car." I think he's absolutely bonkers for suggesting this and I'm also a little petty he wouldn't let me borrow his expensive Porche for a date, but there's some truth to
+what he says. Coding in Neovim is kind of like driving a manual car; There's a subset of people that will absolutely love it and there's a lot of people that may love it but have never tried. I have no idea if you're the kind of person to enjoy coding in Neovim but you
+might be and you won't know unless you try.
 
 I will do my best to include links to articles and videos that explain certain concepts better than I do here. I already created a Youtube video that covers a decent amount of information in this article but also has a nice visual element.
 [Neovim Tutorial and Plugin Overview](https://www.youtube.com/watch?v=pqi6PbQWKmE&t=3s). Learning Neovim is much easier with Youtube tutorials so I highly recommend ya'll check some of them out.
@@ -35,7 +37,8 @@ Vim has four primary modes (and some other less used modes);
 
 Check out this blog [Vim Modes](https://www.warp.dev/terminus/vim-modes) for more information
 
-Switching between modes is confusing at first but once you get some momentum with it you'll be switching between the modes smooth as butter and developing much faster. The different modes are a big part of why you do not need to use your.
+Switching between modes is confusing at first but once you get some momentum with it you'll be switching between the modes smooth as butter and developing much faster. The different modes are a big part of why you do not need to use your. I know one person that switches
+between modes with foot pedals.
 
 ## Why Switch to Vim?
 
@@ -59,11 +62,13 @@ Okay so when I tell people how fantastic it is that typing in Vim enables you to
 
 ### 3. Customization
 
-Some people, when they see a blank canvas, they're excited. Others get nervous. For me the blank canvas that is configuring Vim to my specific liking is exciting.
+Some people, when they see a blank canvas, they're excited. Others get nervous. For me the blank canvas that is configuring Vim to my specific liking is exciting. I like being able to choose my exact keybinds, my preferered formatters and change pretty much everything
+about my editor. It's hard to explain the customization of Neovim. I think watching this video [0 to LSP : Neovim RC From Scratch](https://www.youtube.com/watch?v=w7i4amO_zaE) is the best way to see how deep the customization rabbit hole goes.
 
 ### Speed
 
-To be honest,
+It takes some serious practice to build confidence with Vim motions but once you do, you'll be like Speed Racer on the keyboard. It's like going from 'Hunt-and-Peck' typing to 'Touch Typing.' The video above by ThePrimeagen shows off how fast he is at using Vim.
+I am at a point where I'm faster developing with Vim compared to normal IDEs but I still have much to learn.
 
 ### 5. It looks cool and feels good
 
@@ -82,16 +87,32 @@ and yucky. I will go more in depth on my solution later in the plugins section b
 
 Here are just a few definitions/concepts you will encounter working with Neovim. A lot of these aren't exclusive to Neovim and are important to understand for most IDEs.
 
-### LSP
+### LSP (language server protocol)
+
+Honestly, you should just read through this document [https://matklad.github.io/2022/04/25/why-lsp.html](https://matklad.github.io/2022/04/25/why-lsp.html). It explains what an LSP is far better than I can. If you want a super simple explanation, if you've ever seen
+the red or yellow squiggly lines under a variable, that's one of the MANY things your LSP does.
 
 ### Lua
 
+Lua is a scripting language kinda maybe a little not really at all similar to Python. While you can still use Vimscript (puke) for your Neovim config, you should be using Lua. While I am far from a Lua expert, I do find it quite easy to use for configuration. The big
+thing Neovim has going for it is the fantastic API that you use with Lua. The API covers pretty much any and every setting/config you could ever want. It also gives the smarter people many options when developing plugins.
+
 ### Buffer
 
-## Plugins
+Between you and me, I still don't fully understand what the Buffer is in Vim. This document explains it quite well though [https://linuxhandbook.com/vim-buffers/](https://linuxhandbook.com/vim-buffers/)
+
+### Vim Motions
+
+I briefly mentioned this earlier but one of the best things about Vim are the Vim Motions. Even if you have zero intention of installing Neovim, you should consider installing vim motions. The editing and bouncing around from the different modes only using the keyboard
+are just fantastic and I believe the true way to develop.
+
+## Plugins and my Config
 
 While Neovim by it self is a great experience by itself, it gets really saucy with some plugins. These aren't all the plugins I use but they're some of the most important and I love using them. You can see my entire Neovim config here
-[https://github.com/nolanwinsman/nolanw.nvim](https://github.com/nolanwinsman/nolanw.nvim)
+[https://github.com/nolanwinsman/nolanw.nvim](https://github.com/nolanwinsman/nolanw.nvim) Most notably, the plugins below exclude all my LSP and formatting setup.
+
+Admitidly, creating your config in Neovim is substantially more difficult than most IDEs. I myself have had to wipe everything and start from scratch multiple times. After a few failures though, I've finally built something I'm truly proud of and feels finely tuned to
+me.
 
 #### Lazy [https://github.com/folke/lazy.nvim](https://github.com/folke/lazy.nvim)
 
@@ -109,23 +130,6 @@ telescope.nvim is a highly extendable fuzzy finder over lists. Built on the late
 
 Used to bounce between a few important files faster than Sonic
 
-#### Conform [https://github.com/stevearc/conform.nvim](https://github.com/stevearc/conform.nvim)
-
-Lightweight yet powerful formatter plugin for Neovim
-
-#### Mason [https://github.com/williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)
-
-Portable package manager for Neovim that runs everywhere Neovim runs.
-Easily install and manage LSP servers, DAP servers, linters, and formatters.
-
-#### Mason LSP Config [https://github.com/williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
-
-mason-lspconfig bridges mason.nvim with the lspconfig plugin - making it easier to use both plugins together.
-
-#### nvim-lspconfig [https://github.com/neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
-
-nvim-lspconfig is a "data only" repo, providing basic, default Nvim LSP client configurations for various LSP servers.
-
 ## Videos/Sources
 
 Here are some cool Neovim videos I would recommend you watch.
@@ -133,4 +137,5 @@ Here are some cool Neovim videos I would recommend you watch.
 [Neovim in 100 Seconds](https://www.youtube.com/watch?v=c4OyfL5o7DU)
 [Why I Cant Stande IDE's After Using VIM | Prime Reacts](https://www.youtube.com/watch?v=zPMPqzjM0Fw)
 [0 to LSP : Neovim RC From Scratch](https://www.youtube.com/watch?v=w7i4amO_zaE)
+[Vim vs Neovim](https://www.youtube.com/shorts/7xFOxIrHyHE)
 [John Carmack: Best programming setup and IDE | Lex Fridman Podcast Clips](https://www.youtube.com/watch?v=tzr7hRXcwkw&t=703s)
