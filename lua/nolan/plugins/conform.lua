@@ -26,7 +26,6 @@ return {
 				sh = { "shellcheck" },
 				go = { "gofumpt" },
 				python = { "ruff" },
-				--python = { "ruff" },
 				xml = { "xmllint" },
 			},
 			format_options = {
@@ -42,15 +41,15 @@ return {
 		})
 
 		-- format on save
-		vim.api.nvim_create_autocmd("BufWritePre", {
-			pattern = "*",
-			callback = function(args)
-				require("conform").format({
-					bufnr = args.buf,
-					timeout_ms = 5000,
-				})
-			end,
-		})
+		-- vim.api.nvim_create_autocmd("BufWritePre", {
+		-- 	pattern = "*",
+		-- 	callback = function(args)
+		-- 		require("conform").format({
+		-- 			bufnr = args.buf,
+		-- 			timeout_ms = 5000,
+		-- 		})
+		-- 	end,
+		-- })
 
 		vim.keymap.set({ "n", "v" }, "<leader>l", function()
 			conform.format({

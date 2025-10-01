@@ -59,9 +59,8 @@ and such, input `:wq`
 
 # Text Formatting
 
-| Mode |       Key |              Description |
-| ---- | --------: | -----------------------: |
-| `n`  | `Space l` |              format file |
-| `n`  |      `:w` | saving file formats file |
+| Mode |       Key | Description |
+| ---- | --------: | ----------: |
+| `n`  | `Space l` | format file |
 
 # Debugger

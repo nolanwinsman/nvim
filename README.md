@@ -39,10 +39,10 @@ git clone https://github.com/nolanwinsman/nolanw.nvim.git "${XDG_CONFIG_HOME:-$H
 
 <details><summary> Windows </summary>
 
-If you're using `cmd.exe`:
+If you're using `powershell`:
 
 ```
-git clone https://github.com/nolanwinsman/nolanw.nvim.git "%localappdata%\nvim"
+git clone https://github.com/nolanwinsman/nolanw.nvim.git "$env:LOCALAPPDATA\nvim"
 ```
 
 If you're using `powershell.exe`
