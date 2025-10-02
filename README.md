@@ -90,33 +90,37 @@ This is a compilation of vim inputs I frequnetly use.
 
 ## Script Files
 
-| Filename                               | Description                                                               |
-| -------------------------------------- | ------------------------------------------------------------------------- |
-| README.md                              | This file                                                                 |
-| setup.ps1                              | Complete Windows 11 setup script to install all dependencies (Incomplete) |
-| docs/                                  | Documentation folder                                                      |
-| nvim/                                  | Neovim config folder                                                      |
-| docs/cheatsheet.md                     | List of vim commands I use                                                |
-| docs/dependencies.md                   | Things that need to be installed to use this config                       |
-| docs/plugins.md                        | Detailed overview of all plugins used in config                           |
-| docs/setup.md                          | Instructions on how to set things up                                      |
-| nvim/init.lua                          | Init file                                                                 |
-| nvim/lua/                              | lua folder                                                                |
-| nvim/lua/nolan/                        | nolan folder that stores most config information                          |
-| nvim/lua/nolan/init.lua                | Init file                                                                 |
-| nvim/lua/nolan/lazy.lua                | Lazy plugin manager                                                       |
-| nvim/lua/nolan/remap.lua               | My key remaps for vim (not including plugin remaps)                       |
-| nvim/lua/nolan/set.lua                 | vim settings                                                              |
-| nvim/lua/nolan/plugins/                | plugins folder                                                            |
-| nvim/lua/nolan/plugins/alpha.lua       | alpha-nvim plugin for cool opening nvim screen                            |
-| nvim/lua/nolan/plugins/colorscheme.lua | colorscheme and transparant background                                    |
-| nvim/lua/nolan/plugins/conform.lua     | Conform plugin for text formatting                                        |
-| nvim/lua/nolan/plugins/harpoon.lua     | Harpoon plugin to jump around files                                       |
-| nvim/lua/nolan/plugins/lsp-config.lua  | LSP Config and Mason plugins                                              |
-| nvim/lua/nolan/plugins/oil.lua         | Oil plugin for file tree and file management                              |
-| nvim/lua/nolan/plugins/telescope.lua   | Telescope plugin for fuzzy finder                                         |
-| nvim/lua/nolan/plugins/treesitter.txt  | Treesitter Plugin for syntax highlighting (not used)                      |
-| nvim/lua/nolan/plugins/wakatime.lua    | Wakatime plugin for tracking my hours coding                              |
+| Filename                               | Description                                                                             |
+| -------------------------------------- | --------------------------------------------------------------------------------------- |
+| README.md                              | This file                                                                               |
+| dependencies.ps1                       | Powershell script that winget installs most dependencies (excluding lsps and formatters |
+| docs/                                  | Documentation folder                                                                    |
+| nvim/                                  | Neovim config folder                                                                    |
+| docs/cheatsheet.md                     | List of vim commands I use                                                              |
+| docs/dependencies.md                   | Things that need to be installed to use this config                                     |
+| docs/plugins.md                        | Detailed overview of all plugins used in config                                         |
+| docs/setup.md                          | Instructions on how to set things up                                                    |
+| nvim/init.lua                          | Init file                                                                               |
+| nvim/lsp/                              | lsp config folder                                                                       |
+| nvim/lsp/gopls.lua                     | gopls go lsp config                                                                     |
+| nvim/lsp/lua_ls.lua                    | lua_ls lua lsp config                                                                   |
+| nvim/lua/pyright.lua                   | pyright python lsp config                                                               |
+| nvim/lua/nolan/                        | nolan folder that stores most config information                                        |
+| nvim/lua/nolan/init.lua                | Init file                                                                               |
+| nvim/lua/nolan/lsp.lua                 | lsp config                                                                              |
+| nvim/lua/nolan/lazy.lua                | Lazy plugin manager                                                                     |
+| nvim/lua/nolan/remap.lua               | My key remaps for vim (not including plugin remaps)                                     |
+| nvim/lua/nolan/set.lua                 | vim settings                                                                            |
+| nvim/lua/nolan/plugins/                | plugins folder                                                                          |
+| nvim/lua/nolan/plugins/alpha.lua       | alpha-nvim plugin for cool opening nvim screen                                          |
+| nvim/lua/nolan/plugins/colorscheme.lua | colorscheme and transparant background                                                  |
+| nvim/lua/nolan/plugins/conform.lua     | Conform plugin for text formatting                                                      |
+| nvim/lua/nolan/plugins/harpoon.lua     | Harpoon plugin to jump around files                                                     |
+| nvim/lua/nolan/plugins/lsp-config.lua  | LSP Config and Mason plugins                                                            |
+| nvim/lua/nolan/plugins/oil.lua         | Oil plugin for file tree and file management                                            |
+| nvim/lua/nolan/plugins/telescope.lua   | Telescope plugin for fuzzy finder                                                       |
+| nvim/lua/nolan/plugins/treesitter.txt  | Treesitter Plugin for syntax highlighting (not used)                                    |
+| nvim/lua/nolan/plugins/wakatime.lua    | Wakatime plugin for tracking my hours coding                                            |
 
 # Contact
 
