@@ -42,13 +42,13 @@ git clone https://github.com/nolanwinsman/nolanw.nvim.git "${XDG_CONFIG_HOME:-$H
 If you're using `powershell`:
 
 ```
-git clone https://github.com/nolanwinsman/nolanw.nvim.git "$env:LOCALAPPDATA\nvim"
+git https://github.com/nolanwinsman/nvim.git "$env:LOCALAPPDATA\nvim"
 ```
 
 If you're using `powershell.exe`
 
 ```
-git clone https://github.com/nolanwinsman/nolanw.nvim.git "${env:LOCALAPPDATA}\nvim"
+git clone https://github.com/nolanwinsman/nvim.git "${env:LOCALAPPDATA}\nvim"
 ```
 
 </details>
